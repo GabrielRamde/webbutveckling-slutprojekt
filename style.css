@@ -1,0 +1,120 @@
+body { 
+
+    background-image: url("https://images.freeimages.com/images/large-previews/01a/technology-background-1632715.jpg"); /*Bakgrunds bild på hemsidan*/
+	background-size: cover;
+	background-repeat: no repeat;
+    font-family: Arial, Helvetica, sans-serif; /*Default font family*/
+}
+
+.navbar li { 
+    font-size: 2em; /*storlek på texten*/
+    font-family: Arial;  
+    color: black; /*Färg på texten*/
+    list-style-type: none; /*Ta bort punkter på listan*/
+
+    padding-top: 10px; /*Gör navigationsmenyn större på höjden*/
+    padding-bottom: 10px; /*Flyttar navigationsmenyn neråt så det blir mer mellanrum mellan texten*/
+
+    box-shadow: 0px 0px 22px 10px rgba(0,0,0,0.75); /*Skuggor på sidan av navigationsmenyn*/
+    text-align: center; /*Ändrar texten till mitten*/
+	background-color: white;
+}
+
+.navbar ul { 
+    list-style-type: none;
+    padding: 0;
+	display: flex; /*Lägger navbar på en linje istället för rakt neråt*/
+	justify-content: space-between; /*Gör mellanrum mellan varje objekt i listan*/
+}
+
+.navbar a { 
+    color: black;
+    text-decoration: none; /*Ta bort understräck*/
+	padding: 0;
+}
+
+a:link
+{
+    color: white;
+}
+
+a:visited
+{
+    color: #050000;
+}
+
+a:hover
+{
+    color: #ff0000;
+}
+
+a:active
+{
+    color: #ff0000;
+}
+
+h1 { 
+    text-align: center;
+    display: block;
+    background-color: #ffffff; /*Bakgrundsfärg på huvudrubrik*/
+    color: black;
+    width: 10%; /*bredden på rubrik*/
+    margin: 0 auto; /*position på texten*/
+    padding: 25px 25px; /**/
+    margin-bottom: 50px; /**/
+	border-radius: 10px; /*runda hörn*/
+}
+
+h2 { 
+    margin: 0;
+}
+
+.active { 
+    color: black !important;
+}
+
+.pictureright {
+	width: 15%;
+    height: auto; /*höjden på bilden*/
+    float: right; /*position på bilden*/
+}
+
+.picturecloseright {
+	width: 15%;
+    height: 187px; 
+    float: right;
+}
+
+.picturecloseleft {
+	width: 17%;
+    height: 213px; 
+    float: left; 
+}
+
+.pictureleft {
+	width: 15%;
+    height: auto; 
+    float: left; 
+}
+
+.picturecloseleft2 {
+	width: 17%;
+    height:200px; 
+    float: left; 
+	
+}
+
+.text {  
+    display: block;
+    width: 15%;
+    height: auto;
+    min-height: 500px; /*Minsta höjden på rektanglen*/
+    padding: 25px 25px;
+    color: black;
+    background-color: #ffffff;
+    margin: left;
+    margin-top: 100px;
+    text-align: center;
+    font-family: arial;
+}
+
