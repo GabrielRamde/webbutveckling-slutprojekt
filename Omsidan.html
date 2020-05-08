@@ -7,23 +7,64 @@
         <title>Tekniken bakom bilar</title> <!--Titel på sidan-->
         <link rel="stylesheet" href="style.css" type="text/css"> <!--länkar till extern css-->
     </head> <!--sluttag för head-->
-	
 	<body> <!--starttagg för det som visas i sidan-->
         <header> <!--Påbörjar huvudinnehåll-->
-            <h1 class="Huvudtext">Om Sidan</h1> <!--Huvudtext 1-->
+            <h1>Om Sidan</h1> <!--Huvudtext 1-->
             <nav class="navbar"> <!--Start av navigationsmeny-->
                 <ul> <!--Början av navigationslistan-->
                     <li><a href="Mercedes.html">Mercedes</a></li>
 					<li><a href="Volvo.html">Volvo</a></li>
 					<li><a href="index.html">Home</a></li>
-					<li class="active">Om Sidan</a></li>
+					<li class="active"><a href="#">Om Sidan</a></li>
                     <li><a href="Audi.html">Audi</a></li>
 					<li><a href="BMW.html">BMW</a></li>
                 </ul> <!--Slutet av navigationslistan-->
             </nav> <!--Slutet av navigationsmeny-->
         </header> <!--Avslutar huvudinnehåll-->
-		<main class="text">
-		<h2>Om Sidan</h2>
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		<main class="om">
+			<section>
+				<section class="text">
+					<h2>Om Sidan</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				</section>
+				<img alt="Technology car" class="picturecloseleft2" src="https://www.deltaimpact.com/wp-content/uploads/2019/10/AdobeStock_237123539-e1569922295582-710x360-c-default.jpg">
+			</section>
+			<section>
+			</section>
+			<section> <!--Gör sidan tvåspaltig-->
+				<img alt="Kontakta oss" class="picturecloseleft2" src="https://cdn.mysitoo.com/11704/cache/ctn947_430_7289_0_0__contact.png?v=1516919219">
+				<section class="text">
+					<h3>Kontakta oss!</h3>
+					<form class="formular"> <!--Skapade ett formulär-->
+						<div class="formhelper">
+							<label for="mail">Din Mail:</label><br>
+							<input type="email" id="mail" name="mail"><br> <!--Här kan du skriva in din mail-->
+							<label for="password">Password:</label><br>
+							<input type="password" id="password" name="password"><br>
+						</div>
+						<input type="radio" id="CarGuy" name="Car" value="CarGuy">
+						<label for="CarGuy">CarGuy</label><br>
+						<input type="radio" id="NonCarGuy" name="Car" value="NonCarGuy">
+						<label for="NonCarGuy">NonCarGuy</label><br>
+						<input type="radio" id="other" name="Car" value="other">
+					    <label for="other">Other</label><br>
+						<br>
+						<input type="checkbox" id="BMW" name="BMW" value="BMW">
+						<label for="BMW">BMW</label><br>
+						<input type="checkbox" id="AUDI" name="AUDI" value="AUDI">
+						<label for="AUDI">AUDI</label><br>
+						<input type="checkbox" id="MERCEDES" name="MERCEDES" value="MERCEDES">
+						<label for="MERCEDES">MERCEDES</label><br>
+						<br>
+						<label for="text">Text:</label><br>
+						<textarea name="text" id="text" cols="50" rows="8"></textarea><br> <!--Här kan du skriva text-->
+						<input type="submit" name="skicka" id="skicka" value="Skicka meddelandet"/>
+					</form>
+				</section>
+			</section>
 		</main>
-		<img alt="Technology car" class="picturecloseleft2" src="https://www.deltaimpact.com/wp-content/uploads/2019/10/AdobeStock_237123539-e1569922295582-710x360-c-default.jpg">
+		<footer>
+			<p>Utvecklad av: Gabriel Ramde</p>
+		</footer>
+	</body>
+</html>

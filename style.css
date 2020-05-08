@@ -1,8 +1,7 @@
 body { 
-
     background-image: url("https://images.freeimages.com/images/large-previews/01a/technology-background-1632715.jpg"); /*Bakgrunds bild på hemsidan*/
 	background-size: cover;
-	background-repeat: no repeat;
+	background-repeat: no-repeat;
     font-family: Arial, Helvetica, sans-serif; /*Default font family*/
 }
 
@@ -15,9 +14,16 @@ body {
     padding-top: 10px; /*Gör navigationsmenyn större på höjden*/
     padding-bottom: 10px; /*Flyttar navigationsmenyn neråt så det blir mer mellanrum mellan texten*/
 
-    box-shadow: 0px 0px 22px 10px rgba(0,0,0,0.75); /*Skuggor på sidan av navigationsmenyn*/
+    box-shadow: 0px 0px 22px 10px rgba(255,255,255,0.75); /*Skuggor på sidan av navigationsmenyn*/
     text-align: center; /*Ändrar texten till mitten*/
 	background-color: white;
+	transition: ease transform .3s; /*transformerar navbaren till att åka lite utåt*/
+	min-width: 150px;
+}
+
+.navbar li:hover {
+	transform: scale(1.1); /*transformerar navbaren till att åka lite utåt*/
+	box-shadow: 0px 0px 22px 10px rgba(255,0,0,0.75);
 }
 
 .navbar ul { 
@@ -33,29 +39,24 @@ body {
 	padding: 0;
 }
 
-a:link
-{
+a:link {
     color: white;
 }
 
-a:visited
-{
+a:visited {
     color: #050000;
 }
 
-a:hover
-{
+a:hover {
     color: #ff0000;
 }
 
-a:active
-{
+a:active {
     color: #ff0000;
 }
 
 h1 { 
     text-align: center;
-    display: block;
     background-color: #ffffff; /*Bakgrundsfärg på huvudrubrik*/
     color: black;
     width: 10%; /*bredden på rubrik*/
@@ -63,14 +64,21 @@ h1 {
     padding: 25px 25px; /**/
     margin-bottom: 50px; /**/
 	border-radius: 10px; /*runda hörn*/
+	box-shadow: 0px 0px 22px 10px rgba(255,255,255,0.75);
 }
 
 h2 { 
     margin: 0;
 }
 
-.active { 
-    color: black !important;
+li.active a { 
+    color: red;
+
+}
+
+li.active {
+	box-shadow: 0px 0px 22px 10px rgba(255,0,0,0.75);
+	transform: scale(1.1);
 }
 
 .pictureright {
@@ -98,23 +106,76 @@ h2 {
 }
 
 .picturecloseleft2 {
-	width: 17%;
-    height:200px; 
-    float: left; 
-	
+	width: 50%;
+    height:auto; 
+    float: left;
+	object-fit: cover;
+}
+.tabellpicture {
+	width: 180px;
+	height: 100%;
 }
 
 .text {  
-    display: block;
-    width: 15%;
+    width: 50%;
     height: auto;
-    min-height: 500px; /*Minsta höjden på rektanglen*/
+    min-height: 270px; /*Minsta höjden på rektanglen*/
     padding: 25px 25px;
     color: black;
     background-color: #ffffff;
-    margin: left;
-    margin-top: 100px;
     text-align: center;
     font-family: arial;
 }
+.text2 {
+    width: 100%;
+    height: auto;
+    min-height: 605px; /*Minsta höjden på rektanglen*/
+    padding: 25px 25px;
+    color: black;
+    background-color: #ffffff;
+    text-align: center;
+    font-family: arial;
+}
+main.om {
+	display: grid; /*gör det till en grid*/
+	grid-template-columns: 45% auto 45%; /*storleken på griden*/
+	margin-top: 100px;
+}
+	
+main.om>section{
+	display: flex;
+}
+.formular {
+	text-align: left;
+}
+table, th, td {
+	border: 2px solid white;
+	border-collapse: collapse;
+	color: white;
+	padding: 20px;
+	text-align: center;
+}
+th, td {
+	width: 100px;
+	height: 100px;
+}
 
+.lista {
+	color: white;
+	float: right;
+	border: 2px solid white;
+	padding: 20px;
+	width: 100px;
+	height: 100px;
+	margin: auto;
+}
+footer {
+	color: white;
+	text-align: center;
+}
+
+.formhelper {
+	display: flex;
+	flex-direction: column; /*lägger dem i en kolumn*/
+	align-items: center; /*centrerar dem*/
+}
