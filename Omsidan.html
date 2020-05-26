@@ -4,7 +4,7 @@
         <meta charset="UTF-8"> <!--UTF-8 bokstäver-->
         <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Stänger av zoom för telefoner -->
         <meta http-equiv="X-UA-Compatible" content="ie=edge"> <!-- Anväder senaste rendereringsmotorn i Edge webbläsaren -->
-        <title>Tekniken bakom bilar</title> <!--Titel på sidan-->
+        <title>Omsidan</title> <!--Titel på sidan-->
         <link rel="stylesheet" href="style.css" type="text/css"> <!--länkar till extern css-->
     </head> <!--sluttag för head-->
 	<body> <!--starttagg för det som visas i sidan-->
@@ -18,7 +18,7 @@
 					<li class="active"><a href="#">Om Sidan</a></li>
                     <li><a href="Audi.html">Audi</a></li>
 					<li><a href="BMW.html">BMW</a></li>
-                </ul> <!--Slutet av navigationslistan-->
+                </ul> <!--Slutet av navigationslistan-->	
             </nav> <!--Slutet av navigationsmeny-->
         </header> <!--Avslutar huvudinnehåll-->
 		<main class="om">
@@ -35,21 +35,23 @@
 				<img alt="Kontakta oss" class="picturecloseleft2" src="https://cdn.mysitoo.com/11704/cache/ctn947_430_7289_0_0__contact.png?v=1516919219">
 				<section class="text">
 					<h3>Kontakta oss!</h3>
-					<form class="formular"> <!--Skapade ett formulär-->
-						<div class="formhelper">
-							<label for="mail">Din Mail:</label><br>
-							<input type="email" id="mail" name="mail"><br> <!--Här kan du skriva in din mail-->
-							<label for="password">Password:</label><br>
-							<input type="password" id="password" name="password"><br>
+					<form method="post" action="klar.html"> <!--Skapade ett formulär med action och metod-->
+						<div class="formhelper"> <!--Div class-->
+							<label for="mail">Din Mail:</label><br> <!--Här kan du skriva in din mail-->
+							<input type="email" id="mail" name="mail"><br> <!--Email type-->
+							<label for="namn">Namn:</label> <!--Här kan du skriva in din mail-->
+							<input type="text" id="namn" name="namn"><br> <!--Text type-->
+							<label for="password">Password:</label><br> <!--Skriva in lösenord-->
+							<input type="password" id="password" name="password"><br> <!--Password type-->
 						</div>
-						<input type="radio" id="CarGuy" name="Car" value="CarGuy">
+						<input type="radio" id="CarGuy" name="Car" value="CarGuy"> <!--Runda svarsalternativ-->
 						<label for="CarGuy">CarGuy</label><br>
 						<input type="radio" id="NonCarGuy" name="Car" value="NonCarGuy">
 						<label for="NonCarGuy">NonCarGuy</label><br>
 						<input type="radio" id="other" name="Car" value="other">
 					    <label for="other">Other</label><br>
 						<br>
-						<input type="checkbox" id="BMW" name="BMW" value="BMW">
+						<input type="checkbox" id="BMW" name="BMW" value="BMW"> <!--Fyrkantiga svarsalternativ-->
 						<label for="BMW">BMW</label><br>
 						<input type="checkbox" id="AUDI" name="AUDI" value="AUDI">
 						<label for="AUDI">AUDI</label><br>
@@ -57,13 +59,13 @@
 						<label for="MERCEDES">MERCEDES</label><br>
 						<br>
 						<label for="text">Text:</label><br>
-						<textarea name="text" id="text" cols="50" rows="8"></textarea><br> <!--Här kan du skriva text-->
-						<input type="submit" name="skicka" id="skicka" value="Skicka meddelandet"/>
-					</form>
+						<textarea id="text" name="text" rows="4" cols="50"></textarea><br> <!--Här kan du skriva text i en textarea-->
+						<input type="submit" value="Skicka meddelandet"/>
+					</form> <!--Avslutade ett formulär-->
 				</section>
-			</section>
+			</section> <!--Avslutade tvåspaltig-->
 		</main>
-		<footer>
+		<footer> <!--Längst ner på sidan-->
 			<p>Utvecklad av: Gabriel Ramde</p>
 		</footer>
 	</body>

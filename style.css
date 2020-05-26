@@ -10,10 +10,8 @@ body {
     font-family: Arial;  
     color: black; /*Färg på texten*/
     list-style-type: none; /*Ta bort punkter på listan*/
-
     padding-top: 10px; /*Gör navigationsmenyn större på höjden*/
     padding-bottom: 10px; /*Flyttar navigationsmenyn neråt så det blir mer mellanrum mellan texten*/
-
     box-shadow: 0px 0px 22px 10px rgba(255,255,255,0.75); /*Skuggor på sidan av navigationsmenyn*/
     text-align: center; /*Ändrar texten till mitten*/
 	background-color: white;
@@ -73,7 +71,6 @@ h2 {
 
 li.active a { 
     color: red;
-
 }
 
 li.active {
@@ -82,14 +79,13 @@ li.active {
 }
 
 .pictureright {
-	width: 15%;
-    height: auto; /*höjden på bilden*/
+	width: 15%; /*bredd på bild*/
     float: right; /*position på bilden*/
 }
 
 .picturecloseright {
 	width: 15%;
-    height: 187px; 
+    height: 187px; /*höjd på bild*/
     float: right;
 }
 
@@ -100,17 +96,16 @@ li.active {
 }
 
 .pictureleft {
-	width: 15%;
-    height: auto; 
+	width: 15%; 
     float: left; 
 }
 
 .picturecloseleft2 {
 	width: 50%;
-    height:auto; 
     float: left;
 	object-fit: cover;
 }
+
 .tabellpicture {
 	width: 180px;
 	height: 100%;
@@ -118,7 +113,6 @@ li.active {
 
 .text {  
     width: 50%;
-    height: auto;
     min-height: 270px; /*Minsta höjden på rektanglen*/
     padding: 25px 25px;
     color: black;
@@ -126,9 +120,9 @@ li.active {
     text-align: center;
     font-family: arial;
 }
+
 .text2 {
     width: 100%;
-    height: auto;
     min-height: 605px; /*Minsta höjden på rektanglen*/
     padding: 25px 25px;
     color: black;
@@ -136,6 +130,7 @@ li.active {
     text-align: center;
     font-family: arial;
 }
+
 main.om {
 	display: grid; /*gör det till en grid*/
 	grid-template-columns: 45% auto 45%; /*storleken på griden*/
@@ -145,9 +140,11 @@ main.om {
 main.om>section{
 	display: flex;
 }
-.formular {
+
+form {
 	text-align: left;
 }
+
 table, th, td {
 	border: 2px solid white;
 	border-collapse: collapse;
@@ -155,12 +152,13 @@ table, th, td {
 	padding: 20px;
 	text-align: center;
 }
+
 th, td {
 	width: 100px;
 	height: 100px;
 }
 
-.lista {
+#lista {
 	color: white;
 	float: right;
 	border: 2px solid white;
@@ -169,6 +167,7 @@ th, td {
 	height: 100px;
 	margin: auto;
 }
+
 footer {
 	color: red;
 	text-align: center;
