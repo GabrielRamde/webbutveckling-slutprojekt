@@ -176,7 +176,7 @@ footer {
 }
 
 #formhelper {
-	display: flex;
+	display: flex; 
 	flex-direction: column; /*lägger dem i en kolumn*/
 	align-items: center; /*centrerar dem*/
 }
