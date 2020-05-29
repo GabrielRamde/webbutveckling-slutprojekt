@@ -5,7 +5,7 @@ body {
     font-family: Arial, Helvetica, sans-serif; /*Default font family*/
 }
 
-.navbar li { 
+nav li { 
     font-size: 2em; /*storlek på texten*/
     font-family: Arial;  
     color: black; /*Färg på texten*/
@@ -19,19 +19,19 @@ body {
 	min-width: 150px;
 }
 
-.navbar li:hover {
+nav li:hover {
 	transform: scale(1.1); /*transformerar navbaren till att åka lite utåt*/
 	box-shadow: 0px 0px 22px 10px rgba(255,0,0,0.75);
 }
 
-.navbar ul { 
+nav ul { 
     list-style-type: none;
     padding: 0;
 	display: flex; /*Lägger navbar på en linje istället för rakt neråt*/
 	justify-content: space-between; /*Gör mellanrum mellan varje objekt i listan*/
 }
 
-.navbar a { 
+nav a { 
     color: black;
     text-decoration: none; /*Ta bort understräck*/
 	padding: 0;
@@ -103,7 +103,7 @@ li.active {
 	object-fit: cover;
 }
 
-.tabellpicture {
+table img {
 	width: 180px;
 	height: 100%;
 }
@@ -173,7 +173,6 @@ footer {
 }
 
 #formhelper {
-	display: flex; 
-	flex-direction: column; /*lägger dem i en kolumn*/
+	display: grid; 
 	align-items: center; /*centrerar dem*/
 }
